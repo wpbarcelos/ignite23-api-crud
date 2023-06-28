@@ -1,4 +1,14 @@
+#Deps
 node_modules
-db/app.db
+
+
+#db
+db/*.db
+
+
+#environments
 .env
 .env.test
+
+#build
+build
