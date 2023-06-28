@@ -88,7 +88,7 @@ describe('Transactions routes', () => {
     expect(getTransactionResponse.body.transaction).toEqual(transaction)
   })
 
-  it.only('should be able to get summary', async () => {
+  it('should be able to get summary', async () => {
     const createTransactionResponse = await server.post('/transactions').send({
       title: 'New Transaction',
       amount: 4500,
