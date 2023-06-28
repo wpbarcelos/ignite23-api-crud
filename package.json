@@ -14,7 +14,8 @@
     "knex:refresh": "npm run knex:rollback & npm run knex:migrate",
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "knexprod":"node --no-warnings --loader tsx './node_modules/./bin/knex migrate:latest"
   },
   "keywords": [],
   "author": "",
