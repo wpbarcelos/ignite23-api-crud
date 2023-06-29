@@ -15,7 +15,7 @@
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest",
     "build": "tsup src --out-dir build",
-    "knexprod":"node --no-warnings --loader tsx './node_modules/.bin/knex migrate:latest"
+    "knexprod":"node --no-warnings --loader tsx ./node_modules/.bin/knex"
   },
   "keywords": [],
   "author": "",
