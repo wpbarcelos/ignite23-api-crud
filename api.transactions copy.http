@@ -1,0 +1,19 @@
+GET http://localhost:3333/transactions
+Cookie : sessionId=887f90c7-4622-4d3c-aa2a-9bbf984d0d31
+###
+
+GET http://localhost:3333/transactions/01165234-8e21-42da-914e-8d3196d151a8
+
+###
+
+GET http://localhost:3333/transactions/summary
+
+###
+POST http://localhost:3333/transactions
+Content-Type:'application/json
+
+{
+  "title":"Hosyane Vencimentos",
+  "amount":12000,
+  "type":"credit"
+}
